@@ -1,5 +1,4 @@
 import streamlit as st
-from dotenv import load_dotenv
 import pickle
 from PyPDF2 import PdfReader
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -20,7 +19,7 @@ with st.sidebar:
 
 def main():
     st.header("Chat with pdf ")
-    load_dotenv()
+    
 
     pdf = st.file_uploader("upload your pdf", type = "pdf")
     #st.write(pdf.name)
